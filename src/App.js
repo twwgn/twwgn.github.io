@@ -11,7 +11,7 @@ function App() {
                 <h2>Может пора уже <b>увидеть</b> правду</h2>
             {data.map(d => {
                 return <div key={d.fileName} className="media_container" >
-                    <p>{d.fileName}</p>
+                    {/*<p>{d.fileName}</p>*/}
                     {d.text && <div className="text_div" dangerouslySetInnerHTML={{__html: d.text}} /> }
                     {d.ext.toLowerCase() === 'png' || d.ext.toLowerCase() === 'jpg' ?
                         <img alt={d.fileName} style={{objectFit: 'contain'}}
